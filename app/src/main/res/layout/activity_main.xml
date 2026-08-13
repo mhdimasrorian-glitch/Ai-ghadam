@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F5F7FB">
+
+<ScrollView android:id="@+id/scrollRoot" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/tabBar" android:fillViewport="true">
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <!-- Header -->
+    <LinearLayout android:orientation="horizontal" android:background="#F97316" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="بگردش" android:textSize="26sp" android:textStyle="bold" android:textColor="#FFFFFF" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/coinBadge" android:text="۰ سکه" android:textSize="16sp" android:textColor="#FFFFFF" android:background="#33FFFFFF" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- HOME SECTION -->
+    <LinearLayout android:id="@+id/sectionHome" android:orientation="vertical" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/status" android:text="ورود با شماره موبایل" android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/phone" android:hint="شماره موبایل" android:inputType="phone" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/code" android:hint="کد ۶ رقمی OTP" android:inputType="number" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/otp" android:text="دریافت کد ورود" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/steps" android:text="۰ قدم" an
